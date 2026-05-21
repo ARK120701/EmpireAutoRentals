@@ -1,85 +1,123 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 415">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 390">
 
   <!-- ── NYC SKYLINE SILHOUETTE (navy) ── -->
   <path fill="#1C2E5A" d="
-    M 18,212
-    L 18,180 L 26,180 L 26,168 L 34,168 L 34,156
-    L 44,156 L 44,170 L 54,170
-    L 54,143 L 62,143 L 62,127 L 69,127 L 69,111
-    L 74,111 L 74,95  L 79,95  L 79,79
-    L 82,79  L 82,63  L 86,63  L 86,47
-    L 88,36  L 90,22  L 91,14
-    L 92,22  L 94,36  L 94,47
-    L 97,63  L 97,79  L 100,79 L 100,95
-    L 105,95 L 105,111 L 110,111 L 110,127
-    L 117,127 L 117,143 L 124,143
-    L 124,156 L 137,156 L 137,168 L 148,168 L 148,151
-    L 161,151 L 161,164 L 172,164 L 172,153 L 183,153
-    L 183,168 L 196,168 L 196,156 L 208,156 L 208,170
-    L 221,170 L 221,157 L 235,157 L 235,168 L 247,168
-    L 247,154 L 260,154 L 260,167 L 271,167 L 271,157
-    L 282,157 L 282,146
-    L 287,134 L 292,122 L 296,110 L 300,98  L 304,86
-    L 307,74  L 309,60  L 310,46 L 311,34  L 312,22
-    L 313,34  L 314,46 L 315,60  L 317,74  L 320,86
-    L 324,98  L 328,110 L 332,122 L 337,134 L 342,146
-    L 342,159 L 354,159 L 354,147 L 364,147 L 364,161
-    L 374,161 L 374,172 L 382,172
-    L 382,212 Z
-  "/>
-
-  <!-- ── CAR BODY (cream — sits in front of skyline) ── -->
-  <path fill="#F0EAE0" d="
-    M 40,212
-    L 40,202 L 42,190 L 46,179 L 52,171 L 60,164
-    L 74,157 L 92,151 L 116,145 L 142,141 L 170,138
-    L 200,137
-    L 230,138 L 258,141 L 284,145 L 308,151 L 326,157
-    L 340,164 L 348,171 L 354,179 L 358,190 L 360,202 L 360,212
+    M 10,162
+    L 10,140 L 18,140 L 18,128 L 26,128 L 26,116
+    L 36,116 L 36,128 L 44,128
+    L 44,106 L 50,106 L 50,94 L 55,94 L 55,80
+    L 59,80 L 59,66 L 63,66 L 63,50
+    L 65,38 L 67,24 L 68,14
+    L 69,24 L 71,38 L 73,50
+    L 77,66 L 77,80 L 81,80 L 81,94
+    L 86,94 L 86,106 L 92,106
+    L 92,118 L 104,118 L 104,130 L 116,130 L 116,118
+    L 128,118 L 128,130 L 140,130 L 140,118
+    L 154,118 L 154,128 L 166,128 L 166,118 L 178,118
+    L 178,130 L 192,130 L 192,118 L 208,118 L 208,130
+    L 222,130 L 222,118 L 234,118 L 234,130 L 246,130
+    L 246,118 L 258,118 L 258,128 L 270,128 L 270,118
+    L 282,118 L 282,110
+    L 287,98 L 293,86 L 297,74 L 301,62
+    L 304,50 L 306,36 L 307,22
+    L 308,36 L 310,50 L 313,62
+    L 317,74 L 321,86 L 327,98
+    L 333,110 L 333,120
+    L 344,120 L 344,110 L 354,110 L 354,122
+    L 362,122 L 362,132 L 372,132 L 372,142
+    L 390,142 L 390,162
     Z
   "/>
 
-  <!-- ── LEFT HEADLIGHT ── -->
-  <path fill="#1C2E5A" d="
-    M 46,210 L 46,186 L 58,179 L 73,178 L 78,185 L 78,204 Z
+  <!-- ── CAR MAIN BODY (cream) ── -->
+  <path fill="#F0EAE0" d="
+    M 22,220
+    L 22,204 L 26,190 L 34,177
+    L 48,167 L 68,159 L 92,152
+    L 120,146 L 152,141 L 180,138
+    L 200,137
+    L 220,138 L 248,141 L 280,146
+    L 308,152 L 332,159 L 352,167
+    L 366,177 L 374,190 L 378,204 L 378,220
+    Z
   "/>
 
-  <!-- ── RIGHT HEADLIGHT ── -->
-  <path fill="#1C2E5A" d="
-    M 354,210 L 354,186 L 342,179 L 327,178 L 322,185 L 322,204 Z
-  "/>
+  <!-- ── FRONT BUMPER (navy) ── -->
+  <rect x="22" y="212" width="356" height="10" rx="4" fill="#1C2E5A"/>
 
-  <!-- ── GRILLE DIVIDER LINE ── -->
-  <line x1="96" y1="208" x2="304" y2="208"
-        stroke="#1C2E5A" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- ── LEFT HEADLIGHT housing (navy) ── -->
+  <path fill="#1C2E5A" d="M 30,220 L 30,186 L 48,172 L 76,169 L 88,181 L 88,220 Z"/>
+  <!-- Left headlight lens (cream) -->
+  <path fill="#F5F1EB" d="M 37,217 L 37,189 L 51,177 L 74,174 L 82,184 L 82,217 Z"/>
+  <!-- Left DRL accent (gold) -->
+  <rect x="30" y="186" width="6" height="34" rx="3" fill="#D4A820"/>
+
+  <!-- ── RIGHT HEADLIGHT housing (navy) ── -->
+  <path fill="#1C2E5A" d="M 370,220 L 370,186 L 352,172 L 324,169 L 312,181 L 312,220 Z"/>
+  <!-- Right headlight lens (cream) -->
+  <path fill="#F5F1EB" d="M 363,217 L 363,189 L 349,177 L 326,174 L 318,184 L 318,217 Z"/>
+  <!-- Right DRL accent (gold) -->
+  <rect x="364" y="186" width="6" height="34" rx="3" fill="#D4A820"/>
+
+  <!-- ── CENTER GRILLE (navy) ── -->
+  <rect x="96" y="196" width="208" height="18" rx="4" fill="#1C2E5A"/>
+  <!-- Grille horizontal bars -->
+  <line x1="96" y1="203" x2="304" y2="203" stroke="#F0EAE0" stroke-width="1" opacity="0.3"/>
+  <line x1="96" y1="209" x2="304" y2="209" stroke="#F0EAE0" stroke-width="1" opacity="0.3"/>
+  <!-- Grille vertical dividers -->
+  <line x1="130" y1="196" x2="130" y2="214" stroke="#F0EAE0" stroke-width="1" opacity="0.22"/>
+  <line x1="162" y1="196" x2="162" y2="214" stroke="#F0EAE0" stroke-width="1" opacity="0.22"/>
+  <line x1="200" y1="196" x2="200" y2="214" stroke="#F0EAE0" stroke-width="1.5" opacity="0.4"/>
+  <line x1="238" y1="196" x2="238" y2="214" stroke="#F0EAE0" stroke-width="1" opacity="0.22"/>
+  <line x1="270" y1="196" x2="270" y2="214" stroke="#F0EAE0" stroke-width="1" opacity="0.22"/>
 
   <!-- ── CENTER BADGE ── -->
-  <circle cx="200" cy="200" r="9"   fill="#1C2E5A"/>
-  <circle cx="200" cy="200" r="5.5" fill="#F0EAE0"/>
+  <circle cx="200" cy="205" r="12" fill="#F0EAE0"/>
+  <circle cx="200" cy="205" r="7.5" fill="#1C2E5A"/>
+  <circle cx="200" cy="205" r="3.5" fill="#F0EAE0"/>
+
+  <!-- ── HOOD LINE ── -->
+  <line x1="96" y1="195" x2="304" y2="195" stroke="#1C2E5A" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- ── WHEEL ARCH CUTOUTS (navy ellipses at bottom corners) ── -->
+  <ellipse cx="80" cy="220" rx="46" ry="12" fill="#1C2E5A"/>
+  <ellipse cx="320" cy="220" rx="46" ry="12" fill="#1C2E5A"/>
+
+  <!-- ── TIRES (dark circles inside arches) ── -->
+  <circle cx="80" cy="228" r="17" fill="#0E1A35"/>
+  <circle cx="80" cy="228" r="9" fill="#1C2E5A"/>
+  <circle cx="80" cy="228" r="4" fill="#0E1A35"/>
+  <circle cx="320" cy="228" r="17" fill="#0E1A35"/>
+  <circle cx="320" cy="228" r="9" fill="#1C2E5A"/>
+  <circle cx="320" cy="228" r="4" fill="#0E1A35"/>
+
+  <!-- ── THIN DIVIDER ── -->
+  <line x1="60" y1="258" x2="340" y2="258" stroke="#1C2E5A" stroke-width="1" opacity="0.18"/>
 
   <!-- ── "EMPIRE" ── -->
-  <text x="200" y="265"
+  <text x="200" y="308"
         font-family="Georgia, 'Times New Roman', serif"
         font-weight="bold"
-        font-size="66"
+        font-size="68"
         fill="#1C2E5A"
         text-anchor="middle"
-        letter-spacing="5">EMPIRE</text>
+        letter-spacing="6">EMPIRE</text>
 
   <!-- ── "AUTO RENTALS" ── -->
-  <text x="200" y="300"
+  <text x="200" y="342"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="22"
+        font-size="21"
         fill="#1C2E5A"
         text-anchor="middle"
-        letter-spacing="9">AUTO RENTALS</text>
+        letter-spacing="10">AUTO RENTALS</text>
 
   <!-- ── Tagline ── -->
-  <text x="200" y="338"
+  <text x="200" y="376"
         font-family="Georgia, 'Times New Roman', serif"
         font-style="italic"
-        font-size="16.5"
+        font-size="15"
         fill="#1C2E5A"
-        text-anchor="middle">Drive the Empire State Your Way.</text>
+        text-anchor="middle"
+        opacity="0.62">Drive the Empire State Your Way.</text>
 
 </svg>
