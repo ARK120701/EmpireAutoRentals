@@ -1,36 +1,39 @@
 /* ===== ROOT VARIABLES ===== */
+/* Palette sourced directly from the logo:
+   Navy  #1C2E5A — skyline, text, headlights
+   Cream #F0EAE0 — car body, background              */
 :root {
-  /* Cream / Ivory — primary palette */
-  --bg:          #F7F3EC;
-  --bg-mid:      #F0EBE1;
-  --bg-dark:     #E8E0D0;
-  --card:        #FDFAF5;
-  --border:      #DDD6C8;
+  /* Cream — primary background palette */
+  --bg:          #F5F0E8;   /* lighter cream for general bg */
+  --bg-mid:      #F0EAE0;   /* exact logo cream for alternating sections */
+  --bg-dark:     #E6DDD0;   /* deeper cream for dark-ish sections */
+  --card:        #FDFBF7;   /* near-white cream for cards */
+  --border:      #D9D0C0;   /* cream-toned border */
 
-  /* Blue — accent palette */
-  --blue:        #1A4F8A;
-  --blue-hover:  #15427A;
-  --blue-mid:    #2368A8;
-  --blue-pale:   #E2EBF6;
-  --blue-text:   #1A4F8A;
+  /* Navy — exact logo navy, used for buttons, links, accents */
+  --blue:        #1C2E5A;   /* exact logo navy */
+  --blue-hover:  #152344;   /* darker for hover */
+  --blue-mid:    #243D72;   /* lighter navy for secondary elements */
+  --blue-pale:   #E0E7F3;   /* very pale navy tint for highlights */
+  --blue-text:   #1C2E5A;
 
-  /* Navy — dark text & footer */
-  --navy:        #0F1E38;
-  --navy-mid:    #1C3558;
+  /* Dark Navy — footer & hero dark panels (slightly deeper than logo navy) */
+  --navy:        #111E3C;
+  --navy-mid:    #1C2E5A;   /* = logo navy, bridges blue ↔ navy */
 
   /* Text */
-  --text:        #1C2B3A;
-  --text-muted:  #5A6A7A;
+  --text:        #1C2E5A;   /* logo navy for body text — rich, on-brand */
+  --text-muted:  #5C6878;
   --text-light:  #8898AA;
 
   --white:       #FFFFFF;
   --gold:        #B8820E;
   --gold-light:  #F5D98A;
 
-  /* Shadows */
-  --shadow-sm:   0 1px 4px rgba(15,30,56,0.07);
-  --shadow-md:   0 4px 16px rgba(15,30,56,0.10);
-  --shadow-lg:   0 10px 36px rgba(15,30,56,0.14);
+  /* Shadows (tinted with logo navy) */
+  --shadow-sm:   0 1px 4px rgba(28,46,90,0.08);
+  --shadow-md:   0 4px 16px rgba(28,46,90,0.12);
+  --shadow-lg:   0 10px 36px rgba(28,46,90,0.16);
 
   /* Shape */
   --radius:      6px;
@@ -116,7 +119,7 @@ p  { color: var(--text); line-height: 1.7; }
   background: var(--blue-hover);
   border-color: var(--blue-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(26,79,138,0.28);
+  box-shadow: 0 4px 14px rgba(28,46,90,0.28);
 }
 
 .btn-outline {
@@ -138,7 +141,7 @@ p  { color: var(--text); line-height: 1.7; }
   background: var(--navy-mid);
   border-color: var(--navy-mid);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(15,30,56,0.3);
+  box-shadow: 0 4px 14px rgba(28,46,90,0.3);
 }
 
 .btn-ghost {
