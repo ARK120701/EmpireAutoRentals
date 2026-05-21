@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reviews — Empire Auto Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .star-input {
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #d1d5db;
+      transition: color 0.15s;
+      user-select: none;
+    }
+    .star-input.selected,
+    .star-input:hover { color: #f59e0b; }
+    .star-inputs { display: flex; gap: 4px; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🚗</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Empire Auto Rentals</span>
+          <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"       class="nav-link">Home</a></li>
+        <li><a href="fleet.html"       class="nav-link">Our Fleet</a></li>
+        <li><a href="reviews.html"     class="nav-link active">Reviews</a></li>
+        <li><a href="merchandise.html" class="nav-link">Merch</a></li>
+        <li><a href="contact.html"     class="nav-link">Contact</a></li>
+        <li><a href="contact.html"     class="btn btn-primary btn-sm nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="section-label" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);margin-bottom:16px">Customer Reviews</span>
+      <h1>What Our Customers Say</h1>
+      <p>Real experiences from real renters across the Tri-State area.</p>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews-section">
+    <div class="container">
+
+      <!-- Summary -->
+      <div class="reviews-summary">
+        <div class="rating-big">
+          <div class="rating-number">4.9</div>
+          <div class="stars-row">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+          <div class="rating-count">Based on 58 reviews</div>
+        </div>
+
+        <div class="rating-bars">
+          <div class="rating-bar-row">
+            <span class="bar-label">5 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            <span class="bar-count">51</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="bar-label">4 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:8%"></div></div>
+            <span class="bar-count">5</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="bar-label">3 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:3%"></div></div>
+            <span class="bar-count">2</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="bar-label">2 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+            <span class="bar-count">0</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="bar-label">1 ★</span>
+            <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+            <span class="bar-count">0</span>
+          </div>
+        </div>
+
+        <div style="border-left:1px solid var(--blue-pale);padding-left:40px;min-width:200px">
+          <div style="margin-bottom:20px">
+            <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:4px">Service</div>
+            <div style="font-size:1.1rem;font-weight:800;color:var(--blue-dark)">⭐ 5.0 / 5.0</div>
+          </div>
+          <div style="margin-bottom:20px">
+            <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:4px">Vehicle Condition</div>
+            <div style="font-size:1.1rem;font-weight:800;color:var(--blue-dark)">⭐ 4.9 / 5.0</div>
+          </div>
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:4px">Value</div>
+            <div style="font-size:1.1rem;font-weight:800;color:var(--blue-dark)">⭐ 4.8 / 5.0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Cards -->
+      <div class="reviews-grid">
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1a5276,#2980b9)">M</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Marcus T.</div>
+              <div class="reviewer-date">April 2024 · New York, NY</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+          <div class="review-car-tag">2021 Corvette Stingray</div>
+          <p class="review-text">
+            Absolutely incredible experience! The Corvette was immaculate — detailed perfectly and ready to go. The team at Empire was professional, friendly, and made the whole process seamless. I'll be back for sure!
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="background:linear-gradient(135deg,#c8952a,#f0d080)">J</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Jennifer R.</div>
+              <div class="reviewer-date">March 2024 · Jersey City, NJ</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+          <div class="review-car-tag">2020 VW Jetta SE</div>
+          <p class="review-text">
+            Rented the Jetta for a weekend trip to Connecticut. The car got amazing mileage, was super clean, and pick-up/drop-off was incredibly easy. Empire Auto definitely lives up to the name!
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1a6b3a,#27ae60)">D</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">David K.</div>
+              <div class="reviewer-date">March 2024 · Stamford, CT</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+          <div class="review-car-tag">2019 Ford Fusion SE</div>
+          <p class="review-text">
+            Best car rental company in the tri-state, period. The Ford Fusion was a pleasure to drive — comfortable, fuel-efficient, and spotlessly clean. Pricing was transparent with zero hidden fees. A+!
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="background:linear-gradient(135deg,#6b1a6b,#9b59b6)">A</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Alicia M.</div>
+              <div class="reviewer-date">February 2024 · Brooklyn, NY</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+          <div class="review-car-tag">2022 Cadillac CT5</div>
+          <p class="review-text">
+            Rented the Cadillac CT5 for a corporate event and it was a showstopper! Super luxurious interior, smooth ride, and the Bose sound system is amazing. Empire treated me like royalty. Highly recommend!
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="background:linear-gradient(135deg,#8a1a1a,#e74c3c)">R</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Robert N.</div>
+              <div class="reviewer-date">January 2024 · Newark, NJ</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+          <div class="review-car-tag">2019 Chevrolet Cruze Premier</div>
+          <p class="review-text">
+            Needed a reliable car for two weeks while mine was in the shop. The Cruze Premier was perfect — comfortable, fuel-efficient, and the heated seats were a lifesaver in January! Great customer service too.
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1a4a6b,#5ba3d9)">S</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Sophia L.</div>
+              <div class="reviewer-date">December 2023 · White Plains, NY</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+          <div class="review-car-tag">2021 Toyota Camry SE</div>
+          <p class="review-text">
+            I've rented from big-name companies before and Empire blows them all away. The Camry was newer, cleaner, and cheaper than what I paid elsewhere. The team remembered my name on my second visit. That's real service.
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="background:linear-gradient(135deg,#3d6b1a,#82c91e)">T</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Terrence B.</div>
+              <div class="reviewer-date">November 2023 · Hoboken, NJ</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star empty">☆</span>
+          </div>
+          <div class="review-car-tag">2018 Chevrolet Cruze LT</div>
+          <p class="review-text">
+            Really solid experience. Car was clean and drove great. Would give 5 stars but pickup took a little longer than expected. Still, great value and the staff was friendly. Will definitely rent again!
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="background:linear-gradient(135deg,#6b4a1a,#d4860e)">C</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Carlos V.</div>
+              <div class="reviewer-date">October 2023 · Bridgeport, CT</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+          <div class="review-car-tag">2021 Corvette Stingray</div>
+          <p class="review-text">
+            Took the Corvette for my anniversary weekend. My wife was absolutely blown away. The car is a beast — smooth at cruising speed but an absolute rocket when you need it. Empire made it a night to remember!
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1a5266,#17a2b8)">N</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Nicole F.</div>
+              <div class="reviewer-date">September 2023 · Queens, NY</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span><span class="star filled">★</span>
+            <span class="star filled">★</span>
+          </div>
+          <div class="review-car-tag">2020 VW Jetta SE</div>
+          <p class="review-text">
+            Perfect economy rental for my long drive to visit family. Easy pickup, no stress, reasonable price. The Jetta was comfortable for the whole family. Empire Auto is now my go-to rental company.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- Leave a Review -->
+      <div class="review-form-section" style="margin-top:64px">
+        <div style="max-width:640px;margin:0 auto">
+          <span class="section-label">Share Your Experience</span>
+          <h3 class="section-title" style="margin-bottom:24px">Leave a Review</h3>
+          <form id="reviewForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reviewName">Your Name</label>
+                <input type="text" id="reviewName" placeholder="First Last" required />
+              </div>
+              <div class="form-group">
+                <label for="reviewCar">Vehicle Rented</label>
+                <select id="reviewCar" required>
+                  <option value="">Select a vehicle…</option>
+                  <option>2019 Ford Fusion SE</option>
+                  <option>2020 VW Jetta SE</option>
+                  <option>2018 Chevrolet Cruze LT</option>
+                  <option>2019 Chevrolet Cruze Premier</option>
+                  <option>2021 Corvette Stingray</option>
+                  <option>2021 Toyota Camry SE</option>
+                  <option>2022 Cadillac CT5 Luxury</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Your Rating</label>
+              <div class="star-inputs">
+                <span class="star-input">☆</span>
+                <span class="star-input">☆</span>
+                <span class="star-input">☆</span>
+                <span class="star-input">☆</span>
+                <span class="star-input">☆</span>
+              </div>
+              <input type="hidden" id="ratingValue" value="" />
+            </div>
+            <div class="form-group">
+              <label for="reviewText">Your Review</label>
+              <textarea id="reviewText" rows="4" placeholder="Tell us about your experience…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Review →</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">🚗</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Empire Auto Rentals</span>
+              <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Serving New York, New Jersey, and Connecticut with economy and luxury vehicles you can trust.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"       class="footer-link">Home</a></li>
+            <li><a href="fleet.html"       class="footer-link">Our Fleet</a></li>
+            <li><a href="reviews.html"     class="footer-link">Reviews</a></li>
+            <li><a href="merchandise.html" class="footer-link">Merchandise</a></li>
+            <li><a href="contact.html"     class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Fleet</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link">Ford Fusion</span></li>
+            <li><span class="footer-link">VW Jetta</span></li>
+            <li><span class="footer-link">Chevy Cruze (×2)</span></li>
+            <li><span class="footer-link">Corvette Stingray</span></li>
+            <li><span class="footer-link">Toyota Camry</span></li>
+            <li><span class="footer-link">Cadillac CT5</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+1" class="footer-link">📞 Call Us</a></li>
+            <li><a href="contact.html" class="footer-link">✉️ Email Us</a></li>
+            <li><span class="footer-link">📍 Tri-State Area</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <strong>Empire Auto Rentals</strong>. All rights reserved.</p>
+        <p class="footer-copy">Serving NY · NJ · CT</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

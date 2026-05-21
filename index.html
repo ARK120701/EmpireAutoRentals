@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empire Auto Rentals — Premium Car Rentals in the Tri-State Area</title>
+  <meta name="description" content="Empire Auto Rentals offers economy and luxury car rentals across the Tri-State area. Book online today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ===== HOME EXTRAS ===== */
+    .cta-section {
+      background: linear-gradient(135deg, var(--blue-dark) 0%, #1e3a8a 100%);
+      padding: 96px 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .cta-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+    .cta-section h2 { color: var(--white); margin-bottom: 16px; }
+    .cta-section p  { color: rgba(255,255,255,0.75); font-size: 1.1rem; margin-bottom: 40px; }
+    .cta-buttons    { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .cta-buttons .btn-outline { color: var(--white); border-color: rgba(255,255,255,0.5); }
+    .cta-buttons .btn-outline:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
+
+    .preview-section { background: var(--ivory); padding: 96px 32px; }
+    .preview-cars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .preview-car {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--blue-pale);
+      padding: 28px 24px;
+      text-align: center;
+      transition: all var(--transition);
+    }
+    .preview-car:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--blue-light);
+    }
+    .preview-car-emoji { font-size: 3.2rem; margin-bottom: 12px; }
+    .preview-car-name  { font-weight: 700; color: var(--blue-dark); font-size: 1rem; margin-bottom: 4px; }
+    .preview-car-type  { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    .service-area {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--blue-pale);
+      padding: 48px;
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .service-text { flex: 1; min-width: 240px; }
+    .service-states {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .state-chip {
+      background: var(--blue-pale);
+      color: var(--blue-dark);
+      padding: 12px 24px;
+      border-radius: var(--radius);
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .state-chip small {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 768px) {
+      .preview-cars   { grid-template-columns: 1fr 1fr; }
+      .service-area   { padding: 28px; gap: 28px; }
+    }
+    @media (max-width: 500px) {
+      .preview-cars   { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🚗</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Empire Auto Rentals</span>
+          <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"        class="nav-link active">Home</a></li>
+        <li><a href="fleet.html"        class="nav-link">Our Fleet</a></li>
+        <li><a href="reviews.html"      class="nav-link">Reviews</a></li>
+        <li><a href="merchandise.html"  class="nav-link">Merch</a></li>
+        <li><a href="contact.html"      class="nav-link">Contact</a></li>
+        <li><a href="contact.html"      class="btn btn-primary btn-sm nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>★</span> Tri-State's #1 Choice
+        </div>
+        <h1 class="hero-title">
+          Drive in <em>Style</em>,<br />Arrive with <em>Confidence</em>
+        </h1>
+        <p class="hero-desc">
+          Empire Auto Rentals brings you the best selection of economy and luxury vehicles across New York, New Jersey, and Connecticut — every ride, every time.
+        </p>
+        <div class="hero-actions">
+          <a href="fleet.html"   class="btn btn-gold">Browse Our Fleet 🚗</a>
+          <a href="contact.html" class="btn btn-outline">Book a Ride →</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="hero-stat-num">7</span>
+            <span class="hero-stat-label">Vehicles</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">3</span>
+            <span class="hero-stat-label">States Served</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">4.9</span>
+            <span class="hero-stat-label">Avg. Rating</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">24/7</span>
+            <span class="hero-stat-label">Support</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-car-showcase">
+          <div class="floating-badge badge-tl">
+            <div class="dot"></div> Available Now
+          </div>
+          <div class="hero-car-card">
+            <div class="hero-car-icon">🏎️</div>
+            <div class="hero-car-label">Featured Vehicle</div>
+            <div class="hero-car-name">2021 Corvette Stingray</div>
+            <div class="hero-car-tags">
+              <span class="hero-car-tag">490 HP</span>
+              <span class="hero-car-tag">V8 Engine</span>
+              <span class="hero-car-tag">Sport</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-br">
+            💳 Flexible Payment
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section features-section">
+    <div class="container">
+      <div class="section-center" style="margin-bottom:48px">
+        <span class="section-label">Why Empire</span>
+        <h2 class="section-title">Built Around Your Journey</h2>
+        <p class="section-sub">From everyday commutes to special occasions, we've got you covered.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔑</div>
+          <div class="feature-title">Easy Booking</div>
+          <p class="feature-desc">Reserve your vehicle in minutes — online, by phone, or in person. No hidden fees.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <div class="feature-title">Full Insurance</div>
+          <p class="feature-desc">Every vehicle comes with comprehensive coverage options for complete peace of mind.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <div class="feature-title">Spotless Vehicles</div>
+          <p class="feature-desc">Each car is professionally cleaned and inspected before every rental.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📍</div>
+          <div class="feature-title">Tri-State Coverage</div>
+          <p class="feature-desc">Serving New York, New Jersey, and Connecticut — wherever life takes you.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💼</div>
+          <div class="feature-title">Economy to Luxury</div>
+          <p class="feature-desc">Seven handpicked vehicles across all classes — we have the right car for every budget.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📞</div>
+          <div class="feature-title">24/7 Support</div>
+          <p class="feature-desc">Our team is always reachable. Roadside assistance included with every booking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLEET PREVIEW ===== -->
+  <section class="section preview-section">
+    <div class="container">
+      <div class="section-center" style="margin-bottom:40px">
+        <span class="section-label">Our Fleet</span>
+        <h2 class="section-title">A Car for Every Occasion</h2>
+        <p class="section-sub">From fuel-efficient commuters to head-turning exotics.</p>
+      </div>
+      <div class="preview-cars">
+        <div class="preview-car">
+          <div class="preview-car-emoji">🚗</div>
+          <div class="preview-car-name">Ford Fusion</div>
+          <div class="preview-car-type">Economy</div>
+        </div>
+        <div class="preview-car">
+          <div class="preview-car-emoji">🚙</div>
+          <div class="preview-car-name">Volkswagen Jetta</div>
+          <div class="preview-car-type">Economy</div>
+        </div>
+        <div class="preview-car">
+          <div class="preview-car-emoji">🚘</div>
+          <div class="preview-car-name">Chevrolet Cruze</div>
+          <div class="preview-car-type">Economy · 2 available</div>
+        </div>
+        <div class="preview-car">
+          <div class="preview-car-emoji">🏎️</div>
+          <div class="preview-car-name">Corvette Stingray</div>
+          <div class="preview-car-type">Sport · Luxury</div>
+        </div>
+        <div class="preview-car">
+          <div class="preview-car-emoji">🚕</div>
+          <div class="preview-car-name">Toyota Camry</div>
+          <div class="preview-car-type">Economy</div>
+        </div>
+        <div class="preview-car">
+          <div class="preview-car-emoji">🚖</div>
+          <div class="preview-car-name">Cadillac CT5</div>
+          <div class="preview-car-type">Luxury</div>
+        </div>
+      </div>
+      <div style="text-align:center">
+        <a href="fleet.html" class="btn btn-primary">View Full Fleet & Specs →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION ===== -->
+  <section class="mission-section">
+    <div class="mission-inner">
+      <span class="section-label" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9)">Our Mission</span>
+      <p class="mission-quote">
+        At Empire Auto Rentals, our mission is to deliver an unparalleled rental experience — where every customer, every trip, and every destination is treated with the same commitment to excellence, transparency, and genuine care. We believe getting there is just as important as being there.
+      </p>
+      <p class="mission-attribution">— <strong>Empire Auto Rentals</strong>, Proudly Serving the Tri-State Area</p>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE AREA ===== -->
+  <section class="section" style="background:var(--cream)">
+    <div class="container">
+      <div class="service-area">
+        <div class="service-text">
+          <span class="section-label">Where We Serve</span>
+          <h2 class="section-title" style="margin-bottom:12px">Tri-State Area Coverage</h2>
+          <p style="color:var(--text-muted);margin-bottom:24px;max-width:420px">
+            Empire Auto Rentals proudly serves customers across New York, New Jersey, and Connecticut — with flexible pickup and drop-off options.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Get in Touch →</a>
+        </div>
+        <div class="service-states">
+          <div class="state-chip">NY<small>New York</small></div>
+          <div class="state-chip">NJ<small>New Jersey</small></div>
+          <div class="state-chip">CT<small>Connecticut</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Ready to Hit the Road?</h2>
+      <p>Book your next vehicle today and experience the Empire difference — quality cars, fair prices, and a team that puts you first.</p>
+      <div class="cta-buttons">
+        <a href="fleet.html"   class="btn btn-gold">View Fleet 🚗</a>
+        <a href="contact.html" class="btn btn-outline">Contact Us →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">🚗</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Empire Auto Rentals</span>
+              <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Serving New York, New Jersey, and Connecticut with economy and luxury vehicles you can trust.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"       class="footer-link">Home</a></li>
+            <li><a href="fleet.html"       class="footer-link">Our Fleet</a></li>
+            <li><a href="reviews.html"     class="footer-link">Reviews</a></li>
+            <li><a href="merchandise.html" class="footer-link">Merchandise</a></li>
+            <li><a href="contact.html"     class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Fleet</h5>
+          <ul class="footer-links">
+            <li><a href="fleet.html" class="footer-link">Ford Fusion</a></li>
+            <li><a href="fleet.html" class="footer-link">VW Jetta</a></li>
+            <li><a href="fleet.html" class="footer-link">Chevy Cruze (×2)</a></li>
+            <li><a href="fleet.html" class="footer-link">Corvette Stingray</a></li>
+            <li><a href="fleet.html" class="footer-link">Toyota Camry</a></li>
+            <li><a href="fleet.html" class="footer-link">Cadillac CT5</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+1" class="footer-link">📞 Call Us</a></li>
+            <li><a href="contact.html" class="footer-link">✉️ Email Us</a></li>
+            <li><a href="contact.html" class="footer-link">📍 Tri-State Area</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <strong>Empire Auto Rentals</strong>. All rights reserved.</p>
+        <p class="footer-copy">Serving NY · NJ · CT</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

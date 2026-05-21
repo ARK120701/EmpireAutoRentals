@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Fleet — Empire Auto Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🚗</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Empire Auto Rentals</span>
+          <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"       class="nav-link">Home</a></li>
+        <li><a href="fleet.html"       class="nav-link active">Our Fleet</a></li>
+        <li><a href="reviews.html"     class="nav-link">Reviews</a></li>
+        <li><a href="merchandise.html" class="nav-link">Merch</a></li>
+        <li><a href="contact.html"     class="nav-link">Contact</a></li>
+        <li><a href="contact.html"     class="btn btn-primary btn-sm nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="section-label" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);margin-bottom:16px">7 Vehicles Available</span>
+      <h1>Our Fleet</h1>
+      <p>Economy and luxury rentals for every budget and occasion across the Tri-State area.</p>
+    </div>
+  </section>
+
+  <!-- ===== FLEET ===== -->
+  <section class="fleet-section">
+    <div class="container">
+
+      <!-- Filters -->
+      <div class="fleet-filters">
+        <button class="filter-btn active" data-filter="all">All Vehicles (7)</button>
+        <button class="filter-btn" data-filter="economy">Economy</button>
+        <button class="filter-btn" data-filter="luxury">Luxury</button>
+        <button class="filter-btn" data-filter="sport">Sport</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="fleet-grid">
+
+        <!-- 1 — Ford Fusion -->
+        <article class="car-card" data-category="economy">
+          <div class="car-card-visual">
+            <span class="car-badge badge-economy">Economy</span>
+            <div class="car-emoji">🚗</div>
+          </div>
+          <div class="car-card-body">
+            <div class="car-year-model">2019 · Sedan</div>
+            <h3 class="car-name">Ford Fusion SE</h3>
+            <div class="car-specs">
+              <div class="spec-item">
+                <span class="spec-icon">⚙️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Engine</span>
+                  <span class="spec-value">2.5L 4-Cyl.</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">⛽</span>
+                <div class="spec-info">
+                  <span class="spec-label">MPG</span>
+                  <span class="spec-value">21 City / 32 Hwy</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🪑</span>
+                <div class="spec-info">
+                  <span class="spec-label">Seats</span>
+                  <span class="spec-value">5 Passengers</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🔄</span>
+                <div class="spec-info">
+                  <span class="spec-label">Transmission</span>
+                  <span class="spec-value">6-Speed Auto</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🎨</span>
+                <div class="spec-info">
+                  <span class="spec-label">Color</span>
+                  <span class="spec-value">Silver Metallic</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🛣️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Drive</span>
+                  <span class="spec-value">Front-Wheel Drive</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-divider"></div>
+            <div class="car-footer">
+              <div class="car-price">
+                <span class="price-label">Starting at</span>
+                <span class="price-amount">$45<span>/day</span></span>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book Now →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 — Volkswagen Jetta -->
+        <article class="car-card" data-category="economy">
+          <div class="car-card-visual">
+            <span class="car-badge badge-economy">Economy</span>
+            <div class="car-emoji">🚙</div>
+          </div>
+          <div class="car-card-body">
+            <div class="car-year-model">2020 · Sedan</div>
+            <h3 class="car-name">Volkswagen Jetta SE</h3>
+            <div class="car-specs">
+              <div class="spec-item">
+                <span class="spec-icon">⚙️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Engine</span>
+                  <span class="spec-value">1.4L Turbo 4-Cyl.</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">⛽</span>
+                <div class="spec-info">
+                  <span class="spec-label">MPG</span>
+                  <span class="spec-value">30 City / 40 Hwy</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🪑</span>
+                <div class="spec-info">
+                  <span class="spec-label">Seats</span>
+                  <span class="spec-value">5 Passengers</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🔄</span>
+                <div class="spec-info">
+                  <span class="spec-label">Transmission</span>
+                  <span class="spec-value">8-Speed Auto</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🎨</span>
+                <div class="spec-info">
+                  <span class="spec-label">Color</span>
+                  <span class="spec-value">Deep Black Pearl</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🛣️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Drive</span>
+                  <span class="spec-value">Front-Wheel Drive</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-divider"></div>
+            <div class="car-footer">
+              <div class="car-price">
+                <span class="price-label">Starting at</span>
+                <span class="price-amount">$42<span>/day</span></span>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book Now →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 — Chevy Cruze #1 -->
+        <article class="car-card" data-category="economy">
+          <div class="car-card-visual">
+            <span class="car-badge badge-economy">Economy</span>
+            <div class="car-emoji">🚘</div>
+          </div>
+          <div class="car-card-body">
+            <div class="car-year-model">2018 · Sedan · Unit #1</div>
+            <h3 class="car-name">Chevrolet Cruze LT</h3>
+            <div class="car-specs">
+              <div class="spec-item">
+                <span class="spec-icon">⚙️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Engine</span>
+                  <span class="spec-value">1.4L Turbo 4-Cyl.</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">⛽</span>
+                <div class="spec-info">
+                  <span class="spec-label">MPG</span>
+                  <span class="spec-value">28 City / 38 Hwy</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🪑</span>
+                <div class="spec-info">
+                  <span class="spec-label">Seats</span>
+                  <span class="spec-value">5 Passengers</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🔄</span>
+                <div class="spec-info">
+                  <span class="spec-label">Transmission</span>
+                  <span class="spec-value">6-Speed Auto</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🎨</span>
+                <div class="spec-info">
+                  <span class="spec-label">Color</span>
+                  <span class="spec-value">Summit White</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">💡</span>
+                <div class="spec-info">
+                  <span class="spec-label">Features</span>
+                  <span class="spec-value">Apple CarPlay</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-divider"></div>
+            <div class="car-footer">
+              <div class="car-price">
+                <span class="price-label">Starting at</span>
+                <span class="price-amount">$38<span>/day</span></span>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book Now →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 — Chevy Cruze #2 -->
+        <article class="car-card" data-category="economy">
+          <div class="car-card-visual">
+            <span class="car-badge badge-economy">Economy</span>
+            <div class="car-emoji">🚘</div>
+          </div>
+          <div class="car-card-body">
+            <div class="car-year-model">2019 · Sedan · Unit #2</div>
+            <h3 class="car-name">Chevrolet Cruze Premier</h3>
+            <div class="car-specs">
+              <div class="spec-item">
+                <span class="spec-icon">⚙️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Engine</span>
+                  <span class="spec-value">1.4L Turbo 4-Cyl.</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">⛽</span>
+                <div class="spec-info">
+                  <span class="spec-label">MPG</span>
+                  <span class="spec-value">28 City / 38 Hwy</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🪑</span>
+                <div class="spec-info">
+                  <span class="spec-label">Seats</span>
+                  <span class="spec-value">5 Passengers</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🔄</span>
+                <div class="spec-info">
+                  <span class="spec-label">Transmission</span>
+                  <span class="spec-value">6-Speed Auto</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🎨</span>
+                <div class="spec-info">
+                  <span class="spec-label">Color</span>
+                  <span class="spec-value">Mosaic Black</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">💡</span>
+                <div class="spec-info">
+                  <span class="spec-label">Features</span>
+                  <span class="spec-value">Heated Seats</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-divider"></div>
+            <div class="car-footer">
+              <div class="car-price">
+                <span class="price-label">Starting at</span>
+                <span class="price-amount">$40<span>/day</span></span>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book Now →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 — Corvette -->
+        <article class="car-card" data-category="sport">
+          <div class="car-card-visual luxury">
+            <span class="car-badge badge-sport">Sport · Luxury</span>
+            <div class="car-emoji">🏎️</div>
+          </div>
+          <div class="car-card-body">
+            <div class="car-year-model">2021 · Sports Car</div>
+            <h3 class="car-name">Chevrolet Corvette Stingray</h3>
+            <div class="car-specs">
+              <div class="spec-item">
+                <span class="spec-icon">⚙️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Engine</span>
+                  <span class="spec-value">6.2L V8 LT1</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">⚡</span>
+                <div class="spec-info">
+                  <span class="spec-label">Horsepower</span>
+                  <span class="spec-value">490 HP</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🪑</span>
+                <div class="spec-info">
+                  <span class="spec-label">Seats</span>
+                  <span class="spec-value">2 Passengers</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🔄</span>
+                <div class="spec-info">
+                  <span class="spec-label">Transmission</span>
+                  <span class="spec-value">8-Speed DCT</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">💨</span>
+                <div class="spec-info">
+                  <span class="spec-label">0–60 mph</span>
+                  <span class="spec-value">2.9 Seconds</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🛣️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Drive</span>
+                  <span class="spec-value">Rear-Wheel Drive</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-divider"></div>
+            <div class="car-footer">
+              <div class="car-price">
+                <span class="price-label">Starting at</span>
+                <span class="price-amount">$195<span>/day</span></span>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book Now →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6 — Toyota Camry -->
+        <article class="car-card" data-category="economy">
+          <div class="car-card-visual">
+            <span class="car-badge badge-economy">Economy</span>
+            <div class="car-emoji">🚕</div>
+          </div>
+          <div class="car-card-body">
+            <div class="car-year-model">2021 · Sedan</div>
+            <h3 class="car-name">Toyota Camry SE</h3>
+            <div class="car-specs">
+              <div class="spec-item">
+                <span class="spec-icon">⚙️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Engine</span>
+                  <span class="spec-value">2.5L 4-Cyl.</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">⛽</span>
+                <div class="spec-info">
+                  <span class="spec-label">MPG</span>
+                  <span class="spec-value">28 City / 39 Hwy</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🪑</span>
+                <div class="spec-info">
+                  <span class="spec-label">Seats</span>
+                  <span class="spec-value">5 Passengers</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🔄</span>
+                <div class="spec-info">
+                  <span class="spec-label">Transmission</span>
+                  <span class="spec-value">8-Speed Auto</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🎨</span>
+                <div class="spec-info">
+                  <span class="spec-label">Color</span>
+                  <span class="spec-value">Midnight Black</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">💡</span>
+                <div class="spec-info">
+                  <span class="spec-label">Features</span>
+                  <span class="spec-value">Android Auto</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-divider"></div>
+            <div class="car-footer">
+              <div class="car-price">
+                <span class="price-label">Starting at</span>
+                <span class="price-amount">$44<span>/day</span></span>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book Now →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7 — Cadillac CT5 -->
+        <article class="car-card" data-category="luxury">
+          <div class="car-card-visual luxury">
+            <span class="car-badge badge-luxury">Luxury</span>
+            <div class="car-emoji">🚖</div>
+          </div>
+          <div class="car-card-body">
+            <div class="car-year-model">2022 · Luxury Sedan</div>
+            <h3 class="car-name">Cadillac CT5 Luxury</h3>
+            <div class="car-specs">
+              <div class="spec-item">
+                <span class="spec-icon">⚙️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Engine</span>
+                  <span class="spec-value">2.0L Turbo 4-Cyl.</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">⚡</span>
+                <div class="spec-info">
+                  <span class="spec-label">Horsepower</span>
+                  <span class="spec-value">237 HP</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🪑</span>
+                <div class="spec-info">
+                  <span class="spec-label">Seats</span>
+                  <span class="spec-value">5 Passengers</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🔄</span>
+                <div class="spec-info">
+                  <span class="spec-label">Transmission</span>
+                  <span class="spec-value">10-Speed Auto</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🛣️</span>
+                <div class="spec-info">
+                  <span class="spec-label">Drive</span>
+                  <span class="spec-value">Rear-Wheel Drive</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">💡</span>
+                <div class="spec-info">
+                  <span class="spec-label">Features</span>
+                  <span class="spec-value">Bose Audio, Heated</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-divider"></div>
+            <div class="car-footer">
+              <div class="car-price">
+                <span class="price-label">Starting at</span>
+                <span class="price-amount">$115<span>/day</span></span>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book Now →</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /fleet-grid -->
+
+      <!-- Booking Note -->
+      <div style="text-align:center;margin-top:56px;padding:32px;background:var(--blue-ghost);border-radius:var(--radius-lg);border:1px solid var(--blue-pale)">
+        <h3 style="margin-bottom:8px;color:var(--blue-dark)">Ready to Book?</h3>
+        <p style="color:var(--text-muted);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto">
+          All rentals include roadside assistance and flexible pickup options across the Tri-State area. Minimum rental is 1 day.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Contact Us to Reserve →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">🚗</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Empire Auto Rentals</span>
+              <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Serving New York, New Jersey, and Connecticut with economy and luxury vehicles you can trust.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"       class="footer-link">Home</a></li>
+            <li><a href="fleet.html"       class="footer-link">Our Fleet</a></li>
+            <li><a href="reviews.html"     class="footer-link">Reviews</a></li>
+            <li><a href="merchandise.html" class="footer-link">Merchandise</a></li>
+            <li><a href="contact.html"     class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Fleet</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link">Ford Fusion</span></li>
+            <li><span class="footer-link">VW Jetta</span></li>
+            <li><span class="footer-link">Chevy Cruze (×2)</span></li>
+            <li><span class="footer-link">Corvette Stingray</span></li>
+            <li><span class="footer-link">Toyota Camry</span></li>
+            <li><span class="footer-link">Cadillac CT5</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+1" class="footer-link">📞 Call Us</a></li>
+            <li><a href="contact.html" class="footer-link">✉️ Email Us</a></li>
+            <li><span class="footer-link">📍 Tri-State Area</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <strong>Empire Auto Rentals</strong>. All rights reserved.</p>
+        <p class="footer-copy">Serving NY · NJ · CT</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

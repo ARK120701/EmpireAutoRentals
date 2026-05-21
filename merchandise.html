@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merchandise — Empire Auto Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .merch-filter-btn {
+      padding: 10px 24px;
+      border-radius: 50px;
+      border: 2px solid var(--blue-pale);
+      background: var(--white);
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .merch-filter-btn:hover,
+    .merch-filter-btn.active {
+      background: var(--blue-dark);
+      border-color: var(--blue-dark);
+      color: var(--white);
+    }
+    .merch-hero-note {
+      background: linear-gradient(135deg, var(--blue-ghost) 0%, var(--cream-dark) 100%);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--blue-pale);
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+    .merch-hero-note .note-icon { font-size: 2.5rem; flex-shrink: 0; }
+    .merch-hero-note h4 { color: var(--blue-dark); margin-bottom: 4px; }
+    .merch-hero-note p  { font-size: 0.88rem; color: var(--text-muted); }
+
+    .color-dots { display: flex; gap: 8px; margin: 8px 0 16px; }
+    .color-dot {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all var(--transition);
+    }
+    .color-dot:hover { transform: scale(1.15); border-color: var(--blue-mid); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🚗</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Empire Auto Rentals</span>
+          <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"       class="nav-link">Home</a></li>
+        <li><a href="fleet.html"       class="nav-link">Our Fleet</a></li>
+        <li><a href="reviews.html"     class="nav-link">Reviews</a></li>
+        <li><a href="merchandise.html" class="nav-link active">Merch</a></li>
+        <li><a href="contact.html"     class="nav-link">Contact</a></li>
+        <li><a href="contact.html"     class="btn btn-primary btn-sm nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="section-label" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);margin-bottom:16px">Official Store</span>
+      <h1>Empire Merchandise</h1>
+      <p>Rep the brand — premium apparel and accessories for true car enthusiasts.</p>
+    </div>
+  </section>
+
+  <!-- ===== MERCH ===== -->
+  <section class="merch-section">
+    <div class="container">
+
+      <!-- Banner note -->
+      <div class="merch-hero-note">
+        <div class="note-icon">🚚</div>
+        <div>
+          <h4>Free Shipping on Orders Over $50</h4>
+          <p>Secure checkout · Ships within 3–5 business days · Easy returns within 30 days</p>
+        </div>
+        <div style="margin-left:auto">
+          <a href="contact.html" class="btn btn-primary btn-sm">Custom Orders →</a>
+        </div>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="merch-categories">
+        <button class="merch-filter-btn active" data-filter="all">All Items</button>
+        <button class="merch-filter-btn" data-filter="apparel">Apparel</button>
+        <button class="merch-filter-btn" data-filter="headwear">Headwear</button>
+        <button class="merch-filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="merch-grid">
+
+        <!-- Classic Tee -->
+        <article class="merch-card" data-type="apparel">
+          <div class="merch-visual">
+            <span class="merch-tag">Best Seller</span>
+            <div class="merch-emoji">👕</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Empire Classic Tee</div>
+            <p class="merch-desc">100% premium cotton crew-neck tee with the Empire Auto Rentals logo. Soft, durable, and available in three colors.</p>
+            <div class="color-dots">
+              <div class="color-dot" style="background:#1a4f8a" title="Navy Blue"></div>
+              <div class="color-dot" style="background:#1a1a2e" title="Black"></div>
+              <div class="color-dot" style="background:#fdf8ed;border-color:#d0c8b0" title="Cream"></div>
+            </div>
+            <div class="merch-sizes">
+              <span class="size-chip">XS</span>
+              <span class="size-chip">S</span>
+              <span class="size-chip">M</span>
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+              <span class="size-chip">2XL</span>
+            </div>
+            <div class="merch-footer">
+              <div class="merch-price">$28</div>
+              <button class="btn btn-primary btn-sm add-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Snapback Cap -->
+        <article class="merch-card" data-type="headwear">
+          <div class="merch-visual">
+            <span class="merch-tag">New</span>
+            <div class="merch-emoji">🧢</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Empire Snapback Cap</div>
+            <p class="merch-desc">Structured 6-panel snapback with embroidered Empire Auto Rentals logo on the front. One size fits all.</p>
+            <div class="color-dots">
+              <div class="color-dot" style="background:#1a4f8a" title="Navy"></div>
+              <div class="color-dot" style="background:#1a1a2e" title="Black"></div>
+            </div>
+            <div class="merch-footer">
+              <div class="merch-price">$24</div>
+              <button class="btn btn-primary btn-sm add-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Polo Shirt -->
+        <article class="merch-card" data-type="apparel">
+          <div class="merch-visual">
+            <div class="merch-emoji">👔</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Empire Polo Shirt</div>
+            <p class="merch-desc">Piqué cotton polo with embroidered chest logo. Professional, clean, and perfect for events or everyday wear.</p>
+            <div class="color-dots">
+              <div class="color-dot" style="background:#1a4f8a" title="Navy"></div>
+              <div class="color-dot" style="background:#fdf8ed;border-color:#d0c8b0" title="Cream/Ivory"></div>
+              <div class="color-dot" style="background:#ffffff;border-color:#d0c8b0" title="White"></div>
+            </div>
+            <div class="merch-sizes">
+              <span class="size-chip">S</span>
+              <span class="size-chip">M</span>
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+              <span class="size-chip">2XL</span>
+            </div>
+            <div class="merch-footer">
+              <div class="merch-price">$38</div>
+              <button class="btn btn-primary btn-sm add-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dad Hat -->
+        <article class="merch-card" data-type="headwear">
+          <div class="merch-visual">
+            <span class="merch-tag">Popular</span>
+            <div class="merch-emoji">🎩</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Empire Dad Hat</div>
+            <p class="merch-desc">Unstructured low-profile dad hat with a subtle embroidered script logo. Relaxed and timeless style.</p>
+            <div class="color-dots">
+              <div class="color-dot" style="background:#1a4f8a" title="Navy"></div>
+              <div class="color-dot" style="background:#c8952a" title="Gold"></div>
+              <div class="color-dot" style="background:#1a1a2e" title="Black"></div>
+            </div>
+            <div class="merch-footer">
+              <div class="merch-price">$22</div>
+              <button class="btn btn-primary btn-sm add-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hoodie -->
+        <article class="merch-card" data-type="apparel">
+          <div class="merch-visual">
+            <div class="merch-emoji">🧥</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Empire Pullover Hoodie</div>
+            <p class="merch-desc">Heavyweight fleece hoodie with kangaroo pocket and embroidered logo on the chest. Cozy, premium feel.</p>
+            <div class="color-dots">
+              <div class="color-dot" style="background:#1a4f8a" title="Navy"></div>
+              <div class="color-dot" style="background:#1a1a2e" title="Black"></div>
+            </div>
+            <div class="merch-sizes">
+              <span class="size-chip">S</span>
+              <span class="size-chip">M</span>
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+              <span class="size-chip">2XL</span>
+            </div>
+            <div class="merch-footer">
+              <div class="merch-price">$55</div>
+              <button class="btn btn-primary btn-sm add-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Keychain -->
+        <article class="merch-card" data-type="accessories">
+          <div class="merch-visual">
+            <span class="merch-tag">Gift Idea</span>
+            <div class="merch-emoji">🔑</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Empire Logo Keychain</div>
+            <p class="merch-desc">Heavyweight zinc alloy keychain with the Empire Auto Rentals emblem. A great gift for any car lover.</p>
+            <div class="merch-footer">
+              <div class="merch-price">$12</div>
+              <button class="btn btn-primary btn-sm add-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mug -->
+        <article class="merch-card" data-type="accessories">
+          <div class="merch-visual">
+            <div class="merch-emoji">☕</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Empire Ceramic Mug</div>
+            <p class="merch-desc">15 oz ceramic mug featuring the Empire Auto Rentals logo and "Ride in Style" tagline. Microwave and dishwasher safe.</p>
+            <div class="merch-footer">
+              <div class="merch-price">$18</div>
+              <button class="btn btn-primary btn-sm add-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sticker Pack -->
+        <article class="merch-card" data-type="accessories">
+          <div class="merch-visual">
+            <span class="merch-tag">Fan Fav</span>
+            <div class="merch-emoji">🏷️</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Empire Sticker Pack</div>
+            <p class="merch-desc">5-pack of premium vinyl waterproof stickers. Includes the logo, wordmark, and "Tri-State" designs. Perfect for laptops and cars.</p>
+            <div class="merch-footer">
+              <div class="merch-price">$10</div>
+              <button class="btn btn-primary btn-sm add-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Zip-Up Jacket -->
+        <article class="merch-card" data-type="apparel">
+          <div class="merch-visual">
+            <div class="merch-emoji">🥼</div>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Empire Zip-Up Jacket</div>
+            <p class="merch-desc">Lightweight full-zip track jacket with embroidered logo on chest and sleeve. Perfect for spring and fall drives.</p>
+            <div class="color-dots">
+              <div class="color-dot" style="background:#1a4f8a" title="Navy/Gold"></div>
+              <div class="color-dot" style="background:#1a1a2e" title="Black/Blue"></div>
+            </div>
+            <div class="merch-sizes">
+              <span class="size-chip">S</span>
+              <span class="size-chip">M</span>
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+            </div>
+            <div class="merch-footer">
+              <div class="merch-price">$65</div>
+              <button class="btn btn-primary btn-sm add-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /merch-grid -->
+
+      <!-- Custom Order CTA -->
+      <div style="margin-top:64px;background:linear-gradient(135deg,var(--blue-dark) 0%,#1e3a8a 100%);border-radius:var(--radius-lg);padding:56px 48px;text-align:center;position:relative;overflow:hidden">
+        <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:48px 48px"></div>
+        <div style="position:relative;z-index:1">
+          <h2 style="color:var(--white);margin-bottom:12px">Need Custom or Bulk Orders?</h2>
+          <p style="color:rgba(255,255,255,0.75);max-width:480px;margin:0 auto 32px;font-size:1.05rem">
+            Looking for branded merchandise for your business or special event? We offer custom printing and bulk discounts. Get in touch!
+          </p>
+          <a href="contact.html" class="btn btn-gold">Request a Custom Quote →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">🚗</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Empire Auto Rentals</span>
+              <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Serving New York, New Jersey, and Connecticut with economy and luxury vehicles you can trust.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"       class="footer-link">Home</a></li>
+            <li><a href="fleet.html"       class="footer-link">Our Fleet</a></li>
+            <li><a href="reviews.html"     class="footer-link">Reviews</a></li>
+            <li><a href="merchandise.html" class="footer-link">Merchandise</a></li>
+            <li><a href="contact.html"     class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Merch</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link">Classic Tee — $28</span></li>
+            <li><span class="footer-link">Snapback Cap — $24</span></li>
+            <li><span class="footer-link">Polo Shirt — $38</span></li>
+            <li><span class="footer-link">Hoodie — $55</span></li>
+            <li><span class="footer-link">Keychain — $12</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+15551234567" class="footer-link">📞 (555) 123-4567</a></li>
+            <li><a href="mailto:info@empireautorental.com" class="footer-link">✉️ info@empireautorental.com</a></li>
+            <li><span class="footer-link">📍 Tri-State Area</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <strong>Empire Auto Rentals</strong>. All rights reserved.</p>
+        <p class="footer-copy">Serving NY · NJ · CT</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

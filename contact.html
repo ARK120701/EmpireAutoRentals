@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Empire Auto Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .faq-section {
+      background: var(--ivory);
+      padding: 80px 32px;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--blue-pale);
+      padding: 24px 28px;
+    }
+    .faq-q {
+      font-weight: 700;
+      color: var(--blue-dark);
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+    .faq-a {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .faq-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🚗</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Empire Auto Rentals</span>
+          <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"       class="nav-link">Home</a></li>
+        <li><a href="fleet.html"       class="nav-link">Our Fleet</a></li>
+        <li><a href="reviews.html"     class="nav-link">Reviews</a></li>
+        <li><a href="merchandise.html" class="nav-link">Merch</a></li>
+        <li><a href="contact.html"     class="nav-link active">Contact</a></li>
+        <li><a href="contact.html"     class="btn btn-primary btn-sm nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="section-label" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);margin-bottom:16px">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <p>Ready to book or have questions? We're here 24/7 to help you find the perfect vehicle.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info Side -->
+        <div>
+          <div class="contact-info-card">
+            <h3>Empire Auto Rentals</h3>
+            <p>Tri-State's trusted rental company — reach out anytime.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-item-icon">📞</div>
+                <div>
+                  <div class="contact-item-label">Phone</div>
+                  <div class="contact-item-value">(555) 123-4567</div>
+                  <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:2px">Available 24/7</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">✉️</div>
+                <div>
+                  <div class="contact-item-label">Email</div>
+                  <div class="contact-item-value">info@empireautorental.com</div>
+                  <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:2px">We reply within 2 hours</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">📍</div>
+                <div>
+                  <div class="contact-item-label">Service Area</div>
+                  <div class="contact-item-value">New York · New Jersey · Connecticut</div>
+                  <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:2px">Flexible pickup &amp; drop-off</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">🕐</div>
+                <div>
+                  <div class="contact-item-label">Business Hours</div>
+                  <div class="contact-item-value">Mon – Fri: 8am – 8pm</div>
+                  <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:2px">Sat – Sun: 9am – 6pm</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a href="#" class="social-btn" title="Facebook">f</a>
+              <a href="#" class="social-btn" title="Instagram" style="font-style:italic">in</a>
+              <a href="#" class="social-btn" title="Twitter/X">𝕏</a>
+            </div>
+          </div>
+
+          <!-- Quick actions -->
+          <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div style="background:var(--white);border:1px solid var(--blue-pale);border-radius:var(--radius);padding:20px;text-align:center">
+              <div style="font-size:2rem;margin-bottom:8px">📋</div>
+              <div style="font-weight:700;color:var(--blue-dark);font-size:0.9rem;margin-bottom:4px">View Fleet</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:12px">Browse all 7 vehicles</div>
+              <a href="fleet.html" class="btn btn-outline btn-sm" style="width:100%;justify-content:center">See Cars →</a>
+            </div>
+            <div style="background:var(--white);border:1px solid var(--blue-pale);border-radius:var(--radius);padding:20px;text-align:center">
+              <div style="font-size:2rem;margin-bottom:8px">⭐</div>
+              <div style="font-weight:700;color:var(--blue-dark);font-size:0.9rem;margin-bottom:4px">Reviews</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:12px">4.9 stars · 58 reviews</div>
+              <a href="reviews.html" class="btn btn-outline btn-sm" style="width:100%;justify-content:center">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="form-card">
+          <h3>Book a Vehicle or Ask a Question</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="(555) 000-0000" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vehicle">Preferred Vehicle</label>
+              <select id="vehicle">
+                <option value="">Any vehicle — help me choose</option>
+                <option>2019 Ford Fusion SE — Economy ($45/day)</option>
+                <option>2020 VW Jetta SE — Economy ($42/day)</option>
+                <option>2018 Chevrolet Cruze LT — Economy ($38/day)</option>
+                <option>2019 Chevrolet Cruze Premier — Economy ($40/day)</option>
+                <option>2021 Corvette Stingray — Sport ($195/day)</option>
+                <option>2021 Toyota Camry SE — Economy ($44/day)</option>
+                <option>2022 Cadillac CT5 Luxury — Luxury ($115/day)</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pickupDate">Pickup Date</label>
+                <input type="date" id="pickupDate" />
+              </div>
+              <div class="form-group">
+                <label for="returnDate">Return Date</label>
+                <input type="date" id="returnDate" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="location">Pickup Location / City</label>
+              <input type="text" id="location" placeholder="e.g. Manhattan, NY or Hoboken, NJ" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Notes / Questions</label>
+              <textarea id="message" rows="4" placeholder="Anything else we should know? Special occasion, extra driver, insurance questions…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px">
+              Send Message →
+            </button>
+            <p style="font-size:0.78rem;color:var(--text-muted);margin-top:12px;text-align:center">
+              We typically respond within 2 hours. For urgent requests call us directly at (555) 123-4567.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq-section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:48px">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-q">What do I need to rent a car?</div>
+          <p class="faq-a">A valid driver's license, a major credit card, and proof of insurance. Renters must be at least 21 years old.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you offer delivery to my location?</div>
+          <p class="faq-a">Yes! We offer flexible pickup and drop-off options across the Tri-State area. Contact us for delivery rates.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is insurance included?</div>
+          <p class="faq-a">Basic liability is included. Full coverage options are available at checkout. We recommend adding comprehensive for luxury vehicles.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is the minimum rental period?</div>
+          <p class="faq-a">Our minimum rental is 1 day (24 hours). Weekly and monthly rates are available for extended rentals at a discount.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is your cancellation policy?</div>
+          <p class="faq-a">Free cancellation up to 24 hours before pickup. Same-day cancellations may incur a one-day fee.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you offer roadside assistance?</div>
+          <p class="faq-a">Yes — every rental includes 24/7 roadside assistance. Just call our support line and we'll be there.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">🚗</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Empire Auto Rentals</span>
+              <span class="nav-logo-tag">Tri-State's Premier Rental</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Serving New York, New Jersey, and Connecticut with economy and luxury vehicles you can trust.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"       class="footer-link">Home</a></li>
+            <li><a href="fleet.html"       class="footer-link">Our Fleet</a></li>
+            <li><a href="reviews.html"     class="footer-link">Reviews</a></li>
+            <li><a href="merchandise.html" class="footer-link">Merchandise</a></li>
+            <li><a href="contact.html"     class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Fleet</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link">Ford Fusion</span></li>
+            <li><span class="footer-link">VW Jetta</span></li>
+            <li><span class="footer-link">Chevy Cruze (×2)</span></li>
+            <li><span class="footer-link">Corvette Stingray</span></li>
+            <li><span class="footer-link">Toyota Camry</span></li>
+            <li><span class="footer-link">Cadillac CT5</span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+15551234567" class="footer-link">📞 (555) 123-4567</a></li>
+            <li><a href="mailto:info@empireautorental.com" class="footer-link">✉️ info@empireautorental.com</a></li>
+            <li><span class="footer-link">📍 Tri-State Area</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <strong>Empire Auto Rentals</strong>. All rights reserved.</p>
+        <p class="footer-copy">Serving NY · NJ · CT</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
