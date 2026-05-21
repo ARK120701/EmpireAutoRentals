@@ -7,12 +7,12 @@
   <meta name="description" content="Empire Auto Rentals offers economy and luxury car rentals across the Tri-State area. Book online today." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
     /* ===== HOME EXTRAS ===== */
     .cta-section {
-      background: linear-gradient(135deg, var(--blue-dark) 0%, #1e3a8a 100%);
+      background: linear-gradient(135deg, var(--blue) 0%, #1e3a8a 100%);
       padding: 96px 32px;
       text-align: center;
       position: relative;
@@ -32,7 +32,7 @@
     .cta-buttons .btn-outline { color: var(--white); border-color: rgba(255,255,255,0.5); }
     .cta-buttons .btn-outline:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
 
-    .preview-section { background: var(--ivory); padding: 96px 32px; }
+    .preview-section { background: var(--card); padding: 96px 32px; }
     .preview-cars {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -50,10 +50,10 @@
     .preview-car:hover {
       transform: translateY(-6px);
       box-shadow: var(--shadow-md);
-      border-color: var(--blue-light);
+      border-color: #A8C4E0;
     }
     .preview-car-emoji { font-size: 3.2rem; margin-bottom: 12px; }
-    .preview-car-name  { font-weight: 700; color: var(--blue-dark); font-size: 1rem; margin-bottom: 4px; }
+    .preview-car-name  { font-weight: 700; color: var(--blue); font-size: 1rem; margin-bottom: 4px; }
     .preview-car-type  { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
 
     .service-area {
@@ -74,7 +74,7 @@
     }
     .state-chip {
       background: var(--blue-pale);
-      color: var(--blue-dark);
+      color: var(--blue);
       padding: 12px 24px;
       border-radius: var(--radius);
       font-weight: 800;
@@ -127,21 +127,20 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-grid"></div>
     <div class="hero-inner">
       <div class="hero-content">
         <div class="hero-badge">
-          <span>★</span> Tri-State's #1 Choice
+          <div class="dot"></div> Tri-State Area — NY · NJ · CT
         </div>
         <h1 class="hero-title">
           Drive in <em>Style</em>,<br />Arrive with <em>Confidence</em>
         </h1>
         <p class="hero-desc">
-          Empire Auto Rentals brings you the best selection of economy and luxury vehicles across New York, New Jersey, and Connecticut — every ride, every time.
+          Empire Auto Rentals delivers economy and luxury vehicles across New York, New Jersey, and Connecticut. Transparent pricing. Immaculate cars. No surprises.
         </p>
         <div class="hero-actions">
-          <a href="fleet.html"   class="btn btn-gold">Browse Our Fleet 🚗</a>
-          <a href="contact.html" class="btn btn-outline">Book a Ride →</a>
+          <a href="fleet.html"   class="btn btn-primary">Browse Our Fleet →</a>
+          <a href="contact.html" class="btn btn-outline">Book a Reservation</a>
         </div>
         <div class="hero-stats">
           <div>
@@ -171,10 +170,31 @@
             <div class="hero-car-icon">🏎️</div>
             <div class="hero-car-label">Featured Vehicle</div>
             <div class="hero-car-name">2021 Corvette Stingray</div>
-            <div class="hero-car-tags">
-              <span class="hero-car-tag">490 HP</span>
-              <span class="hero-car-tag">V8 Engine</span>
-              <span class="hero-car-tag">Sport</span>
+            <div class="hero-car-divider"></div>
+            <div class="hero-car-specs">
+              <div>
+                <span class="hero-spec-label">Engine</span>
+                <span class="hero-spec-value">6.2L V8</span>
+              </div>
+              <div>
+                <span class="hero-spec-label">Power</span>
+                <span class="hero-spec-value">490 HP</span>
+              </div>
+              <div>
+                <span class="hero-spec-label">0 – 60 mph</span>
+                <span class="hero-spec-value">2.9 sec</span>
+              </div>
+              <div>
+                <span class="hero-spec-label">Trans.</span>
+                <span class="hero-spec-value">8-Speed DCT</span>
+              </div>
+            </div>
+            <div class="hero-card-footer">
+              <div>
+                <div class="hero-price-label">From</div>
+                <div class="hero-price-val">$195<span>/day</span></div>
+              </div>
+              <a href="contact.html" class="btn btn-ghost btn-sm">Book Now →</a>
             </div>
           </div>
           <div class="floating-badge badge-br">
@@ -277,7 +297,7 @@
   <!-- ===== MISSION ===== -->
   <section class="mission-section">
     <div class="mission-inner">
-      <span class="section-label" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9)">Our Mission</span>
+      <span class="section-label" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.75);border-color:rgba(255,255,255,0.15)">Our Mission</span>
       <p class="mission-quote">
         At Empire Auto Rentals, our mission is to deliver an unparalleled rental experience — where every customer, every trip, and every destination is treated with the same commitment to excellence, transparency, and genuine care. We believe getting there is just as important as being there.
       </p>
@@ -312,8 +332,8 @@
       <h2>Ready to Hit the Road?</h2>
       <p>Book your next vehicle today and experience the Empire difference — quality cars, fair prices, and a team that puts you first.</p>
       <div class="cta-buttons">
-        <a href="fleet.html"   class="btn btn-gold">View Fleet 🚗</a>
-        <a href="contact.html" class="btn btn-outline">Contact Us →</a>
+        <a href="fleet.html"   class="btn btn-ghost">View Fleet →</a>
+        <a href="contact.html" class="btn btn-ghost">Contact Us →</a>
       </div>
     </div>
   </section>
