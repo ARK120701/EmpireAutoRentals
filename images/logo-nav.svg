@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 56">
+
+  <!-- Badge circle -->
+  <circle cx="28" cy="28" r="26" fill="#1C2E5A"/>
+  <circle cx="28" cy="28" r="21" fill="none" stroke="#D4A820" stroke-width="1.5"/>
+
+  <!-- Mini car silhouette inside badge -->
+  <!-- Body -->
+  <path fill="#F0EAE0" d="M10,33 L10,28 L14,22 L20,19 L28,18 L36,19 L42,22 L46,28 L46,33 Z"/>
+  <!-- Windshield area -->
+  <path fill="#1C2E5A" d="M15,27 L17,22 L21,20 L28,19 L35,20 L39,22 L41,27 Z"/>
+  <!-- Bumper -->
+  <rect x="10" y="31" width="36" height="3" rx="1.5" fill="#1C2E5A"/>
+  <!-- Left wheel -->
+  <circle cx="17" cy="35" r="4.5" fill="#0E1A35"/>
+  <circle cx="17" cy="35" r="2" fill="#1C2E5A"/>
+  <!-- Right wheel -->
+  <circle cx="39" cy="35" r="4.5" fill="#0E1A35"/>
+  <circle cx="39" cy="35" r="2" fill="#1C2E5A"/>
+  <!-- Grille -->
+  <rect x="20" y="26" width="16" height="4" rx="1" fill="#1C2E5A"/>
+  <!-- Left headlight -->
+  <rect x="11" y="25" width="6" height="5" rx="1" fill="#D4A820" opacity="0.8"/>
+  <!-- Right headlight -->
+  <rect x="39" y="25" width="6" height="5" rx="1" fill="#D4A820" opacity="0.8"/>
+
+  <!-- EMPIRE text -->
+  <text x="66" y="34"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-weight="bold"
+        font-size="26"
+        fill="#1C2E5A"
+        letter-spacing="3">EMPIRE</text>
+
+  <!-- AUTO RENTALS text -->
+  <text x="68" y="48"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="10"
+        fill="#1C2E5A"
+        letter-spacing="5"
+        opacity="0.75">AUTO RENTALS</text>
+
+</svg>
